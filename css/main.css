@@ -1,0 +1,136 @@
+body{
+    font-family: 'fontscorecomttwcenmt', Roboto,"Helvetica Neue",Arial,sans-serif;
+    background-color: black;
+}
+.row-fuid{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px){
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+}
+}
+.centered-conteiner{
+  width: 1140px;
+}
+
+.arrow {
+    color: #FFCC4C;
+    animation: up-and-down 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes up-and-down {
+    0%, 100% { transform: translateY(-15%)}
+    50%   { transform: translateY(15%)}
+  }
+.from-bottom {
+    animation: fade-in 2.8s cubic-bezier(.17,.67,.49,1.02), from-bottom 1.5s cubic-bezier(.17,.67,.49,1.02);
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+  }
+.from-left{
+    animation: fade-in 1.5s cubic-bezier(.17,.67,.49,1.02), from-left 0.9s cubic-bezier(.17,.67,.49,1.02);
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+.from-right{
+  animation: fade-in 1.5s cubic-bezier(.17,.67,.49,1.02), from-right 0.9s cubic-bezier(.17,.67,.49,1.02);
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+}
+.time-1s{
+  animation-duration : 1s;
+}
+.time-1-5s{
+  animation-duration : 1.3s;
+}
+.time-1-5s{
+  animation-duration : 1.5s;
+}
+.time-2s{
+  animation-duration : 2s;
+}
+  
+  @keyframes fade-in {
+      0% { 
+        opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+    }
+}
+  @keyframes from-bottom{
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+  @keyframes from-left{
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+@keyframes from-right{
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.section-intro{
+  background-image: url(/assets/img/bg_grey_abstract.png);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  display: flex;
+  justify-content: center;
+}
+.brand{
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.brand img{
+  width: 100%;
+}
+.box-intro-animation{
+  position: relative;
+  width: 100%;
+  max-width: 890px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.intro-element{
+  position: absolute;
+}
+.box-intro-animation .intro-camera{
+  bottom: 13px;
+  z-index: 1;
+}
+.box-intro-animation .intro-text-1{
+  left: 170px;
+}
+.box-intro-animation .intro-text-2{
+  left: 231px;
+  top: 25px;
+  z-index: 2;
+}
+.box-intro-animation .intro-text-3{
+  right: 0;
+  top: 140px;
+  z-index: 2;
+}
